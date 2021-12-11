@@ -1,0 +1,249 @@
+*{
+    padding:0;
+    margin:0;
+    line-height:1.5;
+}
+
+.head{
+    width: 100%;
+    height: 170px;
+    text-align:center;
+}
+.head-logo img{
+    width: 100px;
+    padding-top: 15px;;
+}
+.head-text{
+    padding-top: 10px;
+    font-size: 50px;
+    font-family: 'Press Start 2P', cursive;
+}
+.head-text a{
+    text-decoration: none;
+    color:black
+}
+.container{
+    max-width:1200px;
+    height:auto;
+    margin:auto;
+}
+
+.navbar {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+  }
+.navbar a {
+	font-size: 20px;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+}
+.navbar a:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 1s;
+  }
+
+  #lslider{
+      padding: 20px;
+      float: left;
+      margin: auto;
+      max-width: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+}
+  
+  #lslider > ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  #lslider > ul.slider{
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+  }
+  
+  #lslider > ul.slider h1{
+    position: absolute;
+    color:white;
+    left: 50%;
+    top: 200px;
+    transform: translate(-50%, -50%);
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  #lslider > ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  #lslider > ul.slider li img{
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+  }
+  
+  #lslider > ul.slider li:first-child {
+      opacity: 1;
+  }
+  
+  #lslider > ul.slider li:target {
+      opacity: 1;
+  }
+
+  #lslider > .menu{
+    text-align: center;
+    margin:20px;
+    margin-top:80px;
+    background-color: gary;
+  }
+  
+  #lslider > .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  #lslider > .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
+
+.video{
+    float: left;
+    width: 100%;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Maven Pro', sans-serif;
+    margin-bottom: 20px;;
+}
+.video p{
+  padding: 10px;
+  background-color: #3D0000;
+  color:white;
+}
+.video-y{
+    width: 400px;
+    height:250px;
+    padding-bottom:20px;
+}
+.text{
+  display: inline-block;
+  width:100%;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+.footer{
+  color:white;
+  background-color:black;
+  width: 100%;
+  float: left;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Maven Pro', sans-serif;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer-info{
+  display: inline-block;
+  width:100%;
+  font-size: 15px;
+}
+.footer-info a{
+  text-decoration: none;
+  color:white;
+}
+.footer-social{
+  font-size: 40px;
+}
+.footer-social a{
+  color:white;
+}
+
+  @media screen and (min-width: 600px) {
+    .head{
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .head-logo img{
+        width:150px;
+        padding: 20px;
+    }
+    .head-text{
+        padding:20px;
+    }
+    .video{
+      background-color:#3D0000;
+      flex-direction: row;
+    }
+    .video-y{
+      width:50%;
+      padding-bottom:0px;
+    }
+    .video p {
+      width:50%;
+    }
+    .footer{
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: start;
+    }
+    .footer-info{
+      display:block;
+      padding-left: 20px;
+    }
+    .footer-social{
+      padding-right: 20px;
+    }
+  }
+@media screen and (max-width: 600px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+      form {
+          padding: 5%;
+      }
+      .input-texto {
+          width: 100%;
+          max-width: 100%;
+      }
+      
+      #lslider > ul.slider h1{
+        font-size: 30px;
+        top:200px;
+      }
+      
+    .container{
+        width:100%;
+        height: auto;
+    }.video{
+      color:black
+    }
+
+  }
